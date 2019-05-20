@@ -29,8 +29,8 @@ def quotes_replace(s1):
 
 ## Small main test : python3 quote_replacing.py s1
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
+    if len(sys.argv) == 1:
         print('String without remplacement : '+str(sys.argv[1]))
         print('String with remplacement : '+quotes_replace(str(sys.argv[1])))
     else:
-        print ('Not enough arguments. Please enter at least 2 strings')
+        print ('Not enough arguments. Please enter 1 string.')
