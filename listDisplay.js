@@ -19,7 +19,7 @@ function display() {
         .then(function(data) {
             let categories = data.results;
 
-                // Iterate through all the categories fetched and insert its name inside
+                // Iterate through all the categories fetched and
                 return categories.map(function(category) {
                     let li = document.createElement('li');
                     li.innerHTML = category.name;
@@ -32,3 +32,4 @@ function display() {
     });
 
 display();
+}
